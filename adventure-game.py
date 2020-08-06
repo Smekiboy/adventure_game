@@ -65,7 +65,7 @@ def cave(item, alternativ):
                     "the sword with you.")
         print_pause("You walk back out to the field.")
         item.append("spear")
-    field(item, option)
+    field(item, alternativ)
 
 
 
