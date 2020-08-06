@@ -42,6 +42,7 @@ def fight(item, alternativ):
                 print_pause("You do your best...")
                 print_pause("But your dagger is no match for the" + alternativ + ".")
                 print_pause("You have been defeated!")
+                break
         if "2" in response:
             print_pause("You run back into the field. Luckily, " 
                         "you don't seem to have been followed.")
@@ -81,11 +82,10 @@ def field(item, alternativ):
             break
         elif "2" in response:
             print_pause("You are in the cave!")
-            house(item, alternativ)
+            cave(item, alternativ)
             break
         else:
             print_pause("I don't understand!")
-        return response
 
 def play_again():
     option = input("Would you like to play again? "
