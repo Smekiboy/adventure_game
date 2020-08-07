@@ -28,7 +28,7 @@ def house(item, alternativ):
 def fight(item, alternativ):
     while True:
         response = input("Would you like to (1) fight or (2) run away?")
-        if "1" in response:
+        if "1" i == response:
             if "spear" in item:
                 print_pause("As the" + alternativ + " moves to attack, "
                             "you unsheath your new spear.")
@@ -43,12 +43,11 @@ def fight(item, alternativ):
                 print_pause("But your dagger is no match for the" + alternativ + ".")
                 print_pause("You have been defeated!")
             play_again()
-            break
-        if "2" in response:
+        elif "2" == response:
             print_pause("You run back into the field. Luckily, " 
                         "you don't seem to have been followed.")
             field(item, alternativ)
-            break
+            
 
 def cave(item, alternativ):
     if "spear" in item:
